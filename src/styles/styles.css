@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.album-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.album {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    flex: 5 0 16.66%; /* Adjust this value to control how many images are shown */
+    position: relative;
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+}
+
+.album p {
+    padding: 10px;
+    margin: 0;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    filter: invert();
+    cursor: pointer;
+}
+
+d-flex {
+    display: flex;
+    padding: 100px;
+}
+
+
