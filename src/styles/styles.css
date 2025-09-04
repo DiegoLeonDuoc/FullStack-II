@@ -98,3 +98,7 @@ d-flex {
     padding:0 0 .125em;
     scroll-behavior:smooth
 }
+
+.album {
+    margin-right: 10px;
+}
