@@ -1,213 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Definición de codificación de caracteres y visualización en dispositivos móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inclusión de librerías de Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/footer.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Inclusión de jQuery para control de carruseles-->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <title>Nombre página</title>
+    <script src="../scripts/scripts.js"></script>
+    <title>Beat Bazaar</title>
 </head>
 <body>
     <header>
-        <h1>Nombre página</h1>
+        <h1>Beat Bazaar</h1>
     </header>
     <main>
-        <section class="chips">
-            <h2>Chips</h2>
-            <div class="chips-container">
-                <a class="chip" role="button" href="pruebaboton.html">Taylor Swift</a>
-                <a class="chip" role="button" href="pruebaboton.html">Tu mamá</a>
-
-            </div>
-        </section>
-
-
-        <section class="throwbacks">
-            <h2>Throwbacks</h2>
-            <div id="albumCarousel1" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="d-flex overflow-hidden">
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 1">
-                                <p>Album Title 1</p>
-                            </div>
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 2">
-                                <p>Album Title 2</p>
-                            </div>
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 3">
-                                <p>Album Title 3</p>
-                            </div>
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 4">
-                                <p>Album Title 4</p>
-                            </div>
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 5">
-                                <p>Album Title 5</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex overflow-hidden">
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 6">
-                                <p>Album Title 6</p>
-                            </div>
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 7">
-                                <p>Album Title 7</p>
-                            </div>
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 8">
-                                <p>Album Title 8</p>
-                            </div>
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 9">
-                                <p>Album Title 9</p>
-                            </div>
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 10">
-                                <p>Album Title 10</p>
-                            </div>
-                        </div>
+        <h2><b>Artistas populares</b></h2>
+        <!-- Definición del carrusel (copia y pega para el resto de carruseles) -->
+        <!-- Se define el id del carrusel y la clase carousel slide para indicar deslizamiento-->
+        <!-- Se puede utilizar data-ride="carousel" para que el carrusel se inicie automáticamente-->
+        <div id="carrusel-fichas" class="carousel slide">
+            <!-- Se define un div interno que contenga TODO el contenido del carrusel-->
+            <div class="carousel-inner">
+                <!-- Se define un div específico para cada conjunto de elementos que se verá para cada "página" del carrusel-->
+                <!-- La primera "página" debe ser definida como active, para que se muestre por defecto-->
+                <div class="carousel-item active">
+                    <!-- Se define el conjunto de elementos dentro de un 
+                    contenedor de clase d-flex para poder facilitar su ordenamiento-->
+                    <div class="d-flex">
+                        <!-- Los elementos dentro del d-flex serán flexibles
+                        y en este caso son botones. La definición del tamaño se realiza en css-->
+                        <a class="ficha" role="button" href="pruebaboton.html">Taylor Swift</a>
+                        <a class="ficha" role="button" href="pruebaboton.html">Drake</a>
+                        <a class="ficha" role="button" href="pruebaboton.html">Bad Bunny</a>
+                        <a class="ficha" role="button" href="pruebaboton.html">The Weeknd</a>
+                        <a class="ficha" role="button" href="pruebaboton.html">BTS</a>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#albumCarousel1" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+                <div class="carousel-item">
+                    <div class="d-flex">
+                        <a class="ficha" role="button" href="pruebaboton.html">Billie Eilish</a>
+                        <a class="ficha" role="button" href="pruebaboton.html">Ed Sheeran</a>
+                        <a class="ficha" role="button" href="pruebaboton.html">Ariana Grande</a>
+                        <a class="ficha" role="button" href="pruebaboton.html">Post Malone</a>
+                        <a class="ficha" role="button" href="pruebaboton.html">Justin Bieber</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex">
+                        <a class="ficha" role="button" href="pruebaboton.html">Karol G</a>
+                        <a class="ficha" role="button" href="pruebaboton.html">Olivia Rodrigo</a>
+                        <a class="ficha" role="button" href="pruebaboton.html">Harry Styles</a>
+                        <a class="ficha" role="button" href="pruebaboton.html">Dua Lipa</a>
+                        <a class="ficha" role="button" href="pruebaboton.html">J Balvin</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex">
+                        <a class="ficha" role="button" href="pruebaboton.html">Rihanna</a>
+                        <a class="ficha" role="button" href="pruebaboton.html">SZA</a>
+                        <a class="ficha" role="button" href="pruebaboton.html">Travis Scott</a>
+                        <a class="ficha" role="button" href="pruebaboton.html">BLACKPINK</a>
+                        <a class="ficha" role="button" href="pruebaboton.html">Shawn Mendes</a>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Controles de navegación de la carrusel -->
+                <!-- Se define un botón que mueve la vista a la izquierda data-slide="prev" del carrusel-fichas-->
+                <a id="flecha-fichas" class="carousel-control-prev" href="#carrusel-fichas" role="button" data-slide="prev">
+                <!-- Para que se muestre como una flecha izquierda  se utiliza la clase carousel-control-prev-icon-->
+                    <span class="carousel-control-prev-icon"></span>
+                <!-- Se utiliza la clase sr-only para que, en caso de usar lectores de pantalla, el texto "anterior" sea leído por ellos-->
+                    <span class="sr-only">Anterior</span>
                 </a>
-                <a class="carousel-control-next" href="#albumCarousel1" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#carrusel-fichas" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
-            </div>
-        </section>
-        <section class="albums-for-you">
-            <h2>Albums for You</h2>
-            <div> </div>
-            <div id="albumCarousel2" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="d-flex overflow-hidden">
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 1">
-                                <p>Album Title 1</p>
-                            </div>
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 2">
-                                <p>Album Title 2</p>
-                            </div>
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 3">
-                                <p>Album Title 3</p>
-                            </div>
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 4">
-                                <p>Album Title 4</p>
-                            </div>
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 5">
-                                <p>Album Title 5</p>
-                            </div>
+        </div>
+        <h2>Recomendaciones</h2>
+        <div id="carrusel-albumes-1" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex">
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 1">
+                            <p>Album Title 1
+                                <br> $ 12.990
+                            </p>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex overflow-hidden">
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 6">
-                                <p>Album Title 6</p>
-                            </div>
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 7">
-                                <p>Album Title 7</p>
-                            </div>
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 8">
-                                <p>Album Title 8</p>
-                            </div>
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 9">
-                                <p>Album Title 9</p>
-                            </div>
-                            <div class="album">
-                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 10">
-                                <p>Album Title 10</p>
-                            </div>
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 2">
+                            <p>Album Title 2</p>
+                        </div>
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 3">
+                            <p>Album Title 3</p>
+                        </div>
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 4">
+                            <p>Album Title 4</p>
+                        </div>
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 5">
+                            <p>Album Title 5</p>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#albumCarousel2" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#albumCarousel2" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="carousel-item">
+                    <div class="d-flex">
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 6">
+                            <p>Album Title 6</p>
+                        </div>
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 7">
+                            <p>Album Title 7</p>
+                        </div>
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 8">
+                            <p>Album Title 8</p>
+                        </div>
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 9">
+                            <p>Album Title 9</p>
+                        </div>
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 10">
+                            <p>Album Title 10</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        
+            <a class="carousel-control-prev" href="#carrusel-albumes-1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carrusel-albumes-1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <h2>Lo mejor del 2025</h2>
+        <div id="carrusel-albumes-2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex overflow-hidden">
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 1">
+                            <p>Album Title 1</p>
+                        </div>
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 2">
+                            <p>Album Title 2</p>
+                        </div>
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 3">
+                            <p>Album Title 3</p>
+                        </div>
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 4">
+                            <p>Album Title 4</p>
+                        </div>
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 5">
+                            <p>Album Title 5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex overflow-hidden">
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 6">
+                            <p>Album Title 6</p>
+                        </div>
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 7">
+                            <p>Album Title 7</p>
+                        </div>
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 8">
+                            <p>Album Title 8</p>
+                        </div>
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 9">
+                            <p>Album Title 9</p>
+                        </div>
+                        <div class="album">
+                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 10">
+                            <p>Album Title 10</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carrusel-albumes-2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carrusel-albumes-2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>   
+        </div>
     </main>
 </body>
-<footer class="footer-distributed">
-
-			<div class="footer-left">
-
-				<h3>Company<span>logo</span></h3>
-
-				<p class="footer-links">
-					<a href="#">Inicio</a>
-					·
-					<a href="#">Misión</a>
-					·
-					<a href="#">Visión</a>
-					·
-					<a href="#">Contacto</a>
-				</p>
-
-				<p class="footer-company-name">Company Name © 2025</p>
-
-				<div class="footer-icons">
-
-					<a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                        <img src="https://www.facebook.com/favicon.ico" alt="Facebook" width="24" height="24">
-                    </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                        <img src="https://twitter.com/favicon.ico" alt="Twitter" width="24" height="24">
-                    </a>
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                        <img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn" width="24" height="24">
-                    </a>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                        <img src="https://github.com/favicon.ico" alt="GitHub" width="24" height="24">
-                    </a>
-
-                    
-
-				</div>
-
-			</div>
-
-			<div class="footer-right">
-
-				<p>Contacto</p>
-
-				<form action="#" method="post">
-
-					<input type="text" name="email" placeholder="Email">
-					<textarea name="message" placeholder="Mensaje"></textarea>
-					<button>Enviar</button>
-
-				</form>
-
-			</div>
-
-		</footer>
+<footer class="footer-custom">
+    <div class="footer-izq">
+        <h3>Beat<span>Bazar</span></h3>
+        <p class="footer-links">
+            <a href="#">Inicio</a>
+            ·
+            <a href="#">Misión</a>
+            ·
+            <a href="#">Visión</a>
+            ·
+            <a href="#">Contacto</a>
+        </p>
+        <p class="footer-company-name">
+            Beat Bazar © 2025
+        </p>
+        <div class="footer-iconos">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.facebook.com/favicon.ico" alt="Facebook" width="24" height="24">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://twitter.com/favicon.ico" alt="Twitter" width="24" height="24">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn" width="24" height="24">
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <img src="https://github.com/favicon.ico" alt="GitHub" width="24" height="24">
+            </a>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p>Contacto</p>
+        <form action="#" method="post">
+            <input type="text" name="email" placeholder="Email">
+            <textarea name="message" placeholder="Mensaje"></textarea>
+            <button>Enviar</button>
+        </form>
+    </div>
+</footer>
 </html>

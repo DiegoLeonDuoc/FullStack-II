@@ -33,12 +33,13 @@ h2 {
 
 .album {
     background-color: #1e1e1e;
-    border-radius: 8px;
+    border-radius: 4px;
     overflow: hidden;
     width: 300px;
     text-align: center;
     flex: 5 0 16.66%; /* Adjust this value to control how many images are shown */
     position: relative;
+    margin: 5px;
 }
 
 .album img {
@@ -60,16 +61,14 @@ h2 {
     width: 40px;
     height: auto;
     border-radius: 50%;
-    filter: invert();
     cursor: pointer;
 }
 
 d-flex {
     display: flex;
-    padding: 100px;
 }
 
-.chip {
+.ficha {
     align-items:center;
     background:#fff;
     background:hsla(0,0%,100%,.1);
@@ -83,11 +82,24 @@ d-flex {
     font-size:1.125em;
     height:2.25em;
     justify-content:center;
+    overflow:hidden;
     padding:.5em 1em;
-    white-space:nowrap
+    white-space:nowrap;
+    margin-right: 10px;
+    /* flex define el tamaño y espacio entre elementos 5 0 0 significa que el tamaño es el necesario para que quepan 10 elementos sin espaciado*/
+    flex: 10 0 0%;
 }
 
-.chips-container {
+#carrusel-fichas .carousel-inner{
+    padding-left: 3%;
+    padding-right: 2%;
+}
+
+#carrusel-fichas #flecha-fichas {
+    margin-right: 20px;
+}
+
+#fichas-artistas {
     display:flex;
     flex-direction:row;
     font-family:InterVariable,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
@@ -98,3 +110,25 @@ d-flex {
     padding:0 0 .125em;
     scroll-behavior:smooth
 }
+
+#flecha-ficha {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+#carouselTrack {
+  transition: transform 300ms ease;
+  will-change: transform;
+}
+#carouselViewport { /* ensures Bootstrap's overflow-hidden works */
+  max-width: 100%;
+}
+.card { flex: 0 0 auto; }
