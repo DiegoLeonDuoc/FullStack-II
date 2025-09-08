@@ -10,31 +10,57 @@
     <link rel="stylesheet" href="../styles/footer.css">
     <!-- Inclusión de jQuery para control de carruseles-->
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../scripts/scripts.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <title>Beat Bazaar</title>
 </head>
 <body>
     <header>
         <h1>Beat Bazaar</h1>
+
+        <a href="#" class="logo">
+            <img src="../favicon.ico" alt="Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Misión</a></li>
+                <li><a href="#">Visión</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar producto...">
+            <button>Buscar</button>
+        </div>
+        <div class="cart">
+            <a href="#">
+                <i class="fa fa-shopping-cart"></i>
+                <i style='font-size:24px' class='fas'>&#xf07a;</i>
+            </a>
+        </div>
+        <div class="user-account">
+            <a href="#">Login</a> / <a href="#">Sign Up</a>
+        </div>
     </header>
     <main>
         <h2><b>Artistas populares</b></h2>
         <!-- Definición del carrusel (copia y pega para el resto de carruseles) -->
-        <!-- Se define el id del carrusel y la clase carousel slide para indicar deslizamiento-->
-        <!-- Se puede utilizar data-ride="carousel" para que el carrusel se inicie automáticamente-->
-        <div id="carrusel-fichas" class="carousel slide">
+        <!-- Se define el id del carrusel y la clase carousel slide para indicar deslizamiento -->
+        <!-- Se puede utilizar data-ride="carousel" para que el carrusel se inicie automáticamente -->
+        <!-- Con data-interval="false" se evita que el carrusel se mueva automáticamente -->
+        <div id="carrusel-fichas" class="carousel slide" data-interval="false">
             <!-- Se define un div interno que contenga TODO el contenido del carrusel-->
             <div class="carousel-inner">
-                <!-- Se define un div específico para cada conjunto de elementos que se verá para cada "página" del carrusel-->
-                <!-- La primera "página" debe ser definida como active, para que se muestre por defecto-->
+                <!-- Se define un div específico para cada conjunto de elementos que se verá para cada "página" del carrusel -->
+                <!-- La primera "página" debe ser definida como active, para que se muestre por defecto -->
                 <div class="carousel-item active">
                     <!-- Se define el conjunto de elementos dentro de un 
-                    contenedor de clase d-flex para poder facilitar su ordenamiento-->
+                    contenedor de clase d-flex para poder facilitar su ordenamiento -->
                     <div class="d-flex">
                         <!-- Los elementos dentro del d-flex serán flexibles
-                        y en este caso son botones. La definición del tamaño se realiza en css-->
+                        y en este caso son botones. La definición del tamaño se realiza en css -->
                         <a class="ficha" role="button" href="pruebaboton.html">Taylor Swift</a>
                         <a class="ficha" role="button" href="pruebaboton.html">Drake</a>
                         <a class="ficha" role="button" href="pruebaboton.html">Bad Bunny</a>
@@ -72,20 +98,20 @@
                 
             </div>
             <!-- Controles de navegación de la carrusel -->
-                <!-- Se define un botón que mueve la vista a la izquierda data-slide="prev" del carrusel-fichas-->
+                <!-- Se define un botón que mueve la vista a la izquierda data-slide="prev" del carrusel-fichas -->
                 <a id="flecha-fichas" class="carousel-control-prev" href="#carrusel-fichas" role="button" data-slide="prev">
-                <!-- Para que se muestre como una flecha izquierda  se utiliza la clase carousel-control-prev-icon-->
+                <!-- Para que se muestre como una flecha izquierda  se utiliza la clase carousel-control-prev-icon -->
                     <span class="carousel-control-prev-icon"></span>
-                <!-- Se utiliza la clase sr-only para que, en caso de usar lectores de pantalla, el texto "anterior" sea leído por ellos-->
+                <!-- Se utiliza la clase sr-only para que, en caso de usar lectores de pantalla, el texto "anterior" sea leído por ellos -->
                     <span class="sr-only">Anterior</span>
                 </a>
                 <a class="carousel-control-next" href="#carrusel-fichas" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+                    <span class="sr-only">Siguiente</span>
                 </a>
         </div>
         <h2>Recomendaciones</h2>
-        <div id="carrusel-albumes-1" class="carousel slide">
+        <div id="carrusel-albumes-1" class="carousel slide" data-interval="false">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="d-flex">
@@ -144,14 +170,14 @@
             </a>
             <a class="carousel-control-next" href="#carrusel-albumes-1" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <span class="sr-only">Siguiente</span>
             </a>
         </div>
         <h2>Lo mejor del 2025</h2>
-        <div id="carrusel-albumes-2" class="carousel slide" data-ride="carousel">
+        <div id="carrusel-albumes-2" class="carousel slide" data-interval="false">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="d-flex overflow-hidden">
+                    <div class="d-flex">
                         <div class="album">
                             <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 1">
                             <p>Album Title 1</p>
@@ -201,11 +227,11 @@
             </div>
             <a class="carousel-control-prev" href="#carrusel-albumes-2" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <span class="sr-only">Anterior</span>
             </a>
             <a class="carousel-control-next" href="#carrusel-albumes-2" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <span class="sr-only">Siguiente</span>
             </a>   
         </div>
     </main>
