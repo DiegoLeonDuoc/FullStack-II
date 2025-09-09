@@ -79,8 +79,8 @@
 }
 
 .footer-custom .footer-right{
-	flex: 1 1 0px;
-	min-width: 260px;
+	flex: 0 0 0px;
+	min-width: 460px;
 	align-self: flex-end;
 }
 
