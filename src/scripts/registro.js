@@ -81,7 +81,8 @@
 
     // Valida la edad para que sea mayor de 18 y menor de 120
     function isValidAge(age) {
-        return age >=18 && age <= 120;
+        var ageNum = parseInt(age);
+        return ageNum >=18 && ageNum <= 120;
     }
 
     /**
@@ -126,6 +127,7 @@
         var rut = rutInput.value || '';
         var email = emailInput.value || '';
         var pw = pwInput.value || '';
+        var age = ageInput.value || '';
 
        // Se comprueba el formato del RUT
        // Si no es válido
