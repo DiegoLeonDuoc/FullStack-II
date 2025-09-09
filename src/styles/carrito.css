@@ -1,6 +1,21 @@
+.btn-primary {
+    background: #094b57;
+    border: none;
+}
+
 .cart-list .cart-item {
     background: rgba(255,255,255,0.03);
     border-radius: 6px;
+}
+
+.form-control {
+    background: rgba(255,255,255,0.02);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.form-control::placeholder {
+    color: rgba(255,255,255,0.5);
 }
 
 .product-thumb {
@@ -20,7 +35,7 @@
 }
 
 .checkout-card {
-    background: rgba(255,255,255,0.02);
+    background: rgba(0, 0, 0, 0.02);
 }
 
 .remove-item {
