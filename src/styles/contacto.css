@@ -1,0 +1,104 @@
+.contact-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.03);
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+
+label {
+    font-weight: 600;
+}
+
+.required {
+    color: #e74c3c;
+}
+
+.char-count {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Match footer input/textarea look */
+.contact-container input[type="email"],
+.contact-container textarea,
+.contact-container .form-control {
+    display: block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #1a1b1f;                /* same as footer inputs */
+    box-shadow: 0 1px 0 0 rgba(255,255,255,0.1);
+    border: none;
+    resize: none;
+    font: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    color: #d1d2d2;                            /* footer text color */
+    width: 100%;
+    padding: 18px;
+}
+
+/* Placeholder color consistent with footer */
+.contact-container ::-webkit-input-placeholder { color: #5c666b; }
+.contact-container ::-moz-placeholder { color: #5c666b; opacity:1; }
+.contact-container :-ms-input-placeholder { color: #5c666b; }
+
+/* Specific sizing */
+.contact-container input[type="email"] {
+    height: 55px;
+    margin-bottom: 15px;
+}
+
+.contact-container textarea {
+    min-height: 160px;
+    height: 160px;
+    margin-bottom: 20px;
+}
+
+/* Button style aligned with footer */
+.contact-container .btn-primary {
+    border-radius: 3px;
+    background-color: #1a1b1f;
+    color: #ffffff;
+    border: 0;
+    padding: 15px 50px;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+    .contact-container {
+        padding: 20px;
+    }
+
+    .contact-container input[type="email"],
+    .contact-container textarea {
+        padding: 14px;
+    }
+
+    .contact-container .btn-primary {
+        padding: 10px 35px;
+    }
+}
+
+@media (max-width: 800px) {
+    .contact-container {
+        margin: 20px;
+        padding: 16px;
+    }
+
+    .contact-container input[type="email"],
+    .contact-container textarea {
+        width: 100%;
+    }
+
+    .contact-container .btn-primary {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+/* Form helper/text colors */
+.form-note { font-size: 0.9rem; color: #bbb; }
+.error { color: #ff7b7b; font-size: 0.9rem; }

@@ -1,7 +1,6 @@
-/* Header component styles (extracted from original CSS) */
 .header-component {
     background-color: #1e1e1e;
-    background-image: linear-gradient(#05151c, black);
+    background-image: linear-gradient(#05151c, #000000fd);
     display: flex;
     justify-content: space-between;
     align-items: center;

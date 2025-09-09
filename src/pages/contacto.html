@@ -1,17 +1,21 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Beat Bazaar — Misión</title>
+    <title>Beat Bazaar — Contact</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/mision.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/contacto.css">
+    <script src="../scripts/contacto.js" defer></script>
 </head>
 <body>
+    <!-- Placeholder header -->
     <header class="header-component" role="banner">
         <div class="header-left">
         <a href="index.html" class="logo"><img src="src/favicon.ico" alt="Beat Bazaar logo"></a>
@@ -41,34 +45,37 @@
         </div>
         </div>
     </header>
+
     <main>
-        <section class="mision-container" aria-labelledby="mision-title">
-        <div class="mision-header">
-            <h2 id="mision-title">Nuestra Misión</h2>
-            <div class="mision-meta">Beat Bazaar — Compromiso con la música y la comunidad</div>
-        </div>
+        <section class="contact-container">
+            <h2>Contáctanos</h2>
+            <p class="form-note">Envíanos un mensaje. <strong>Máximo 1000 caracteres</strong>.</p>
 
-        <div class="mision-body">
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod, nisl sit amet gravida consequat, justo arcu aliquet nunc, at dictum neque lorem sed arcu. Sed condimentum, risus vitae volutpat tristique, velit sapien dignissim nibh, vitae efficitur lacus lorem non lacus. Vivamus nec aliquet nibh. Praesent facilisis urna eget sem fermentum, vitae fermentum nibh lacinia. Curabitur sit amet nisl sit amet neque tincidunt posuere. Nulla facilisi.
-            </p>
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="tu@correo.com" required>
+                    <div id="email-error" class="error" aria-live="polite" style="display:none;">Por favor ingresa un correo válido.</div>
+                </div>
 
-            <p>
-            Phasellus vitae eros id arcu interdum tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut orci sit amet lorem congue luctus. Cras ut magna vitae arcu molestie pharetra. Integer posuere, lorem at efficitur ultricies, urna purus condimentum purus, quis vulputate ligula erat non lectus.
-            </p>
+                <div class="form-group">
+                    <label for="message">Mensaje <span class="required">*</span></label>
+                    <textarea id="message" name="message" class="form-control" maxlength="1000" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    <div class="d-flex justify-content-between align-items-center mt-2">
+                        <div id="message-error" class="error" style="display:none;">El mensaje no puede estar vacío.</div>
+                        <div class="char-count" id="char-count">0 / 1000</div>
+                    </div>
+                </div>
 
-            <p>
-            Aenean sed tortor eu urna dictum hendrerit. Aliquam erat volutpat. Vivamus id risus vitae augue varius molestie. Suspendisse potenti. Donec vitae nibh vitae arcu posuere hendrerit. Etiam non mi euismod, facilisis lacus id, cursus nisl. Sed at lorem id lorem vehicula interdum.
-            </p>
-
-            <p>
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer vulputate, sapien non convallis dapibus, urna quam consectetur leo, id vulputate purus turpis in urna. Nam sit amet tempus sapien. Morbi feugiat, purus in consequat cursus, lorem neque tristique neque, quis bibendum velit nibh eu lorem.
-            </p>
-        </div>
+                <div class="form-group mt-3">
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    <span id="form-status" class="ml-3" aria-live="polite"></span>
+                </div>
+            </form>
         </section>
     </main>
-</body>
-<footer class="footer-custom">
+
+    <footer class="footer-custom">
     <div class="footer-izq">
         <h3>Beat<span>Bazar</span></h3>
         <p class="footer-links">
@@ -107,4 +114,5 @@
         </form>
     </div>
 </footer>
+</body>
 </html>
