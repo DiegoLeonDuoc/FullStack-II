@@ -1,25 +1,11 @@
+/* Componentes  A → Z */
 /* Define el color de los links al pasar el mouse por encima */
 a:hover {
     color: #ffffff;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #000000;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-}
-
 d-flex {
     display: flex;
-}
-
-header {
-    background-color: #1e1e1e;
-    background-image: linear-gradient(#05151c, black);
-    padding: 20px;
-    text-align: center;
 }
 
 h1 {
@@ -30,16 +16,27 @@ h2 {
     margin-top: 20px;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 main {
+    flex: 1 0 auto;
     padding: 20px;
 }
 
-.album-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
+/* Classes A → Z */
 .album {
     background-color: #1e1e1e;
     border-radius: 4px;
@@ -61,32 +58,66 @@ main {
     margin: 0;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.album-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
     position: absolute;
     width: 40px;
 }
 
-
+.cart,
+.user-account {
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
 
 .ficha {
-    align-items:center;
-    background:#09191f;
+    align-items: center;
+    background: #09191f;
     /* Redondeo bordes */
-    border-radius:15px;
+    border-radius: 15px;
     /* Color letra */
-    color:#fff;
-    display:flex;
-    /* Tamaños en em para ser proporcionales al resto del texto*/
-    font-size:1.1em;
-    height:2.25em;
-    justify-content:center;
+    color: #fff;
+    display: flex;
+    /* Tamaños en em para ser proporcionales al resto del texto */
+    font-size: 1.1em;
+    height: 2.25em;
+    justify-content: center;
     /* Margen para despegar las fichas */
     margin-right: 10px;
-    /* flex define el tamaño y espacio entre elementos 5 0 0 significa que el tamaño es el necesario para que quepan 10 elementos sin espaciado*/
+    /* flex define el tamaño y espacio entre elementos 5 0 0 significa que el tamaño es el necesario para que quepan 10 elementos sin espaciado */
     flex: 10 0 0%;
 }
 
-#carrusel-fichas .carousel-inner{
+.header-left,
+.header-right,
+.search-bar,
+.album {
+    min-width: 0;
+}
+
+/* spacing for user-account links */
+.user-account a {
+    color: white;
+    text-decoration: none;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+/* Ensure input shrink behavior */
+.search-bar input {
+    flex: 1 1 auto;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* IDs A → Z */
+#carrusel-fichas .carousel-inner {
     /* Padding para dejar espacio para las flechas */
     padding-left: 3%;
     padding-right: 2%;
@@ -104,68 +135,33 @@ main {
     cursor: pointer;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/* @media rules */
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+    }
 
-.logo img {
-    height: 50px;
-}
+    .header-left,
+    .header-right {
+        width: 100%;
+        justify-content: space-between;
+        gap: 12px;
+    }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
+    .search-bar {
+        flex-basis: 100%;
+        width: 100%;
+        max-width: none;
+        margin-top: 8px;
+    }
 
-nav ul li {
-    margin-right: 20px;
-}
+    .search-bar input {
+        width: 100%;
+    }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.search-bar input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-.search-bar button {
-    padding: 10px 20px;
-    background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-left: 10px;
-}
-
-.cart a {
-    color: white;
-    text-decoration: none;
-    position: relative;
-}
-
-.cart span {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background-color: #f44336;
-    color: white;
-    padding: 5px;
-    border-radius: 50%;
-}
-
-.user-account a {
-    color: white;
-    text-decoration: none;
-    margin-left: 10px;
+    .cart,
+    .user-account {
+        margin-top: 8px;
+    }
 }

@@ -1,47 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <!-- Definición de codificación de caracteres y visualización en dispositivos móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Inclusión de librerías de Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Inclusión de librerías de FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
-    <!-- Inclusión de jQuery para control de carruseles-->
+    <!-- Inclusión de jQuery y bootstrap js para control de carruseles-->
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../scripts/scripts.js"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <title>Beat Bazaar</title>
 </head>
 <body>
-    <header>
-        <h1>Beat Bazaar</h1>
+    <header class="header-component" role="banner">
+        <div class="header-left">
+        <a href="#" class="logo"><img src="../favicon.ico" alt="Beat Bazaar logo"></a>
 
-        <a href="#" class="logo">
-            <img src="../favicon.ico" alt="Logo">
-        </a>
-        <nav>
+        <nav aria-label="Main navigation">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Misión</a></li>
-                <li><a href="#">Visión</a></li>
-                <li><a href="#">Contacto</a></li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Misión</a></li>
+            <li><a href="#">Visión</a></li>
+            <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
-        <div class="search-bar">
-            <input type="text" placeholder="Buscar producto...">
-            <button>Buscar</button>
         </div>
-        <div class="cart">
-            <a href="#">
-                <i class="fa fa-shopping-cart"></i>
-                <i style='font-size:24px' class='fas'>&#xf07a;</i>
-            </a>
+
+        <div class="header-right">
+        <div class="search-bar" role="search">
+            <input type="text" placeholder="Buscar producto..." aria-label="Buscar producto">
+            <button type="button">Buscar</button>
         </div>
+
+        <div class="cart" aria-hidden="false">
+            <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <span>3</span>
+        </div>
+
         <div class="user-account">
-            <a href="#">Login</a> / <a href="#">Sign Up</a>
+            <a href="#">Registrarse</a> / <a href="#">Iniciar sesión</a>
+        </div>
         </div>
     </header>
     <main>
