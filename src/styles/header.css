@@ -1,0 +1,137 @@
+.header-component {
+    background-color: #1e1e1e;
+    background-image: linear-gradient(#05151c, #000000fd);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    color: #fff;
+}
+
+.header-component .header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-width: 0;
+}
+
+.header-component .header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.header-component .logo img {
+    height: 50px;
+}
+
+.header-component nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header-component nav ul li {
+    margin-right: 20px;
+}
+
+.header-component nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-component .search-bar {
+    display: flex;
+    flex: 1 1 300px;
+    max-width: 600px;
+    min-width: 180px;
+    align-items: center;
+    min-width: 0;
+}
+
+.header-component .search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    flex: 1 1 auto;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.header-component .search-bar button {
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.header-component .cart a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.header-component .cart span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.header-component .cart,
+.header-component .user-account {
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+
+.header-component .user-account a {
+    color: white;
+    text-decoration: none;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.header-component .header-left,
+.header-component .header-right,
+.header-component .search-bar {
+    min-width: 0;
+}
+
+@media (max-width: 800px) {
+    .header-component {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .header-component .header-left,
+    .header-component .header-right {
+        width: 100%;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .header-component .search-bar {
+        flex-basis: 100%;
+        width: 100%;
+        max-width: none;
+        margin-top: 8px;
+    }
+
+    .header-component .search-bar input {
+        width: 100%;
+    }
+
+    .header-component .cart,
+    .header-component .user-account {
+        margin-top: 8px;
+    }
+}

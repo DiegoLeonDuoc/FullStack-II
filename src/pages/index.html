@@ -1,114 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <!-- Definición de codificación de caracteres y visualización en dispositivos móviles -->
+    <!-- Definición de codificación de caracteres y visualización -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Inclusión de librerías de Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Inclusión de librerías de FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
-    <!-- Inclusión de jQuery para control de carruseles-->
+    <!-- Inclusión de jQuery y bootstrap js para control de carruseles-->
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="../scripts/scripts.js"></script>
     <title>Beat Bazaar</title>
 </head>
 <body>
-    <header>
-        <h1>Beat Bazaar</h1>
+    <header class="header-component" role="banner">
+        <div class="header-left">
+        <a href="index.html" class="logo"><img src="src/favicon.ico" alt="Beat Bazaar logo"></a>
+
+        <nav aria-label="Main navigation">
+            <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="mision.html">Misión</a></li>
+            <li><a href="vision.html">Visión</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        </div>
+
+        <div class="header-right">
+        <div class="search-bar" role="search">
+            <input type="text" placeholder="Buscar producto..." aria-label="Buscar producto">
+            <button type="button">Buscar</button>
+        </div>
+        
+        <!-- Se define un div para el carrito -->
+        <div class="cart" aria-hidden="false">
+            <!-- Se define un enlace que apunta a la página de carrito -->
+            <!-- Se define un ícono de carrito mediante un texto italico con clase modificada (FontAwesome) -->
+            <a href="carrito.html"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+
+        <div class="user-account">
+            <a href="registro.html">Registrarse</a> / <a href="login.html">Iniciar sesión</a>
+        </div>
+        </div>
     </header>
     <main>
         <h2><b>Artistas populares</b></h2>
         <!-- Definición del carrusel (copia y pega para el resto de carruseles) -->
-        <!-- Se define el id del carrusel y la clase carousel slide para indicar deslizamiento-->
-        <!-- Se puede utilizar data-ride="carousel" para que el carrusel se inicie automáticamente-->
-        <div id="carrusel-fichas" class="carousel slide">
+        <!-- Se define el id del carrusel y la clase carousel slide para indicar deslizamiento -->
+        <!-- Se puede utilizar data-ride="carousel" para que el carrusel se inicie automáticamente -->
+        <!-- Con data-interval="false" se evita que el carrusel se mueva automáticamente -->
+        <div id="carrusel-fichas" class="carousel slide" data-interval="false">
             <!-- Se define un div interno que contenga TODO el contenido del carrusel-->
             <div class="carousel-inner">
-                <!-- Se define un div específico para cada conjunto de elementos que se verá para cada "página" del carrusel-->
-                <!-- La primera "página" debe ser definida como active, para que se muestre por defecto-->
+                <!-- Se define un div específico para cada conjunto de elementos que se verá para cada "página" del carrusel -->
+                <!-- La primera "página" debe ser definida como active, para que se muestre por defecto -->
                 <div class="carousel-item active">
                     <!-- Se define el conjunto de elementos dentro de un 
-                    contenedor de clase d-flex para poder facilitar su ordenamiento-->
+                    contenedor de clase d-flex para poder facilitar su ordenamiento -->
                     <div class="d-flex">
                         <!-- Los elementos dentro del d-flex serán flexibles
-                        y en este caso son botones. La definición del tamaño se realiza en css-->
-                        <a class="ficha" role="button" href="pruebaboton.html">Taylor Swift</a>
-                        <a class="ficha" role="button" href="pruebaboton.html">Drake</a>
-                        <a class="ficha" role="button" href="pruebaboton.html">Bad Bunny</a>
-                        <a class="ficha" role="button" href="pruebaboton.html">The Weeknd</a>
-                        <a class="ficha" role="button" href="pruebaboton.html">BTS</a>
+                        y en este caso son botones. La definición del tamaño se realiza en css -->
+                        <a class="ficha" role="button" href="producto.html">Taylor Swift</a>
+                        <a class="ficha" role="button" href="producto.html">Drake</a>
+                        <a class="ficha" role="button" href="producto.html">Bad Bunny</a>
+                        <a class="ficha" role="button" href="producto.html">The Weeknd</a>
+                        <a class="ficha" role="button" href="producto.html">BTS</a>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-flex">
-                        <a class="ficha" role="button" href="pruebaboton.html">Billie Eilish</a>
-                        <a class="ficha" role="button" href="pruebaboton.html">Ed Sheeran</a>
-                        <a class="ficha" role="button" href="pruebaboton.html">Ariana Grande</a>
-                        <a class="ficha" role="button" href="pruebaboton.html">Post Malone</a>
-                        <a class="ficha" role="button" href="pruebaboton.html">Justin Bieber</a>
+                        <a class="ficha" role="button" href="producto.html">Billie Eilish</a>
+                        <a class="ficha" role="button" href="producto.html">Ed Sheeran</a>
+                        <a class="ficha" role="button" href="producto.html">Ariana Grande</a>
+                        <a class="ficha" role="button" href="producto.html">Post Malone</a>
+                        <a class="ficha" role="button" href="producto.html">Justin Bieber</a>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-flex">
-                        <a class="ficha" role="button" href="pruebaboton.html">Karol G</a>
-                        <a class="ficha" role="button" href="pruebaboton.html">Olivia Rodrigo</a>
-                        <a class="ficha" role="button" href="pruebaboton.html">Harry Styles</a>
-                        <a class="ficha" role="button" href="pruebaboton.html">Dua Lipa</a>
-                        <a class="ficha" role="button" href="pruebaboton.html">J Balvin</a>
+                        <a class="ficha" role="button" href="producto.html">Karol G</a>
+                        <a class="ficha" role="button" href="producto.html">Olivia Rodrigo</a>
+                        <a class="ficha" role="button" href="producto.html">Harry Styles</a>
+                        <a class="ficha" role="button" href="producto.html">Dua Lipa</a>
+                        <a class="ficha" role="button" href="producto.html">J Balvin</a>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-flex">
-                        <a class="ficha" role="button" href="pruebaboton.html">Rihanna</a>
-                        <a class="ficha" role="button" href="pruebaboton.html">SZA</a>
-                        <a class="ficha" role="button" href="pruebaboton.html">Travis Scott</a>
-                        <a class="ficha" role="button" href="pruebaboton.html">BLACKPINK</a>
-                        <a class="ficha" role="button" href="pruebaboton.html">Shawn Mendes</a>
+                        <a class="ficha" role="button" href="producto.html">Rihanna</a>
+                        <a class="ficha" role="button" href="producto.html">SZA</a>
+                        <a class="ficha" role="button" href="producto.html">Travis Scott</a>
+                        <a class="ficha" role="button" href="producto.html">BLACKPINK</a>
+                        <a class="ficha" role="button" href="producto.html">Shawn Mendes</a>
                     </div>
                 </div>
                 
             </div>
             <!-- Controles de navegación de la carrusel -->
-                <!-- Se define un botón que mueve la vista a la izquierda data-slide="prev" del carrusel-fichas-->
+                <!-- Se define un botón que mueve la vista a la izquierda data-slide="prev" del carrusel-fichas -->
                 <a id="flecha-fichas" class="carousel-control-prev" href="#carrusel-fichas" role="button" data-slide="prev">
-                <!-- Para que se muestre como una flecha izquierda  se utiliza la clase carousel-control-prev-icon-->
+                <!-- Para que se muestre como una flecha izquierda  se utiliza la clase carousel-control-prev-icon -->
                     <span class="carousel-control-prev-icon"></span>
-                <!-- Se utiliza la clase sr-only para que, en caso de usar lectores de pantalla, el texto "anterior" sea leído por ellos-->
+                <!-- Se utiliza la clase sr-only para que, en caso de usar lectores de pantalla, el texto "anterior" sea leído por ellos -->
                     <span class="sr-only">Anterior</span>
                 </a>
                 <a class="carousel-control-next" href="#carrusel-fichas" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+                    <span class="sr-only">Siguiente</span>
                 </a>
         </div>
         <h2>Recomendaciones</h2>
-        <div id="carrusel-albumes-1" class="carousel slide">
+        <div id="carrusel-albumes-1" class="carousel slide" data-interval="false">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="d-flex">
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 1">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 1">
+                            </a>
                             <p>Album Title 1
                                 <br> $ 12.990
                             </p>
                         </div>
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 2">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 2">
+                            </a>
                             <p>Album Title 2</p>
                         </div>
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 3">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 3">
+                            </a>
                             <p>Album Title 3</p>
                         </div>
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 4">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 4">
+                            </a>
                             <p>Album Title 4</p>
                         </div>
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 5">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 5">
+                            </a>
                             <p>Album Title 5</p>
                         </div>
                     </div>
@@ -116,23 +158,33 @@
                 <div class="carousel-item">
                     <div class="d-flex">
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 6">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 6">
+                            </a>
                             <p>Album Title 6</p>
                         </div>
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 7">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 7">
+                            </a>
                             <p>Album Title 7</p>
                         </div>
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 8">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 8">
+                            </a>
                             <p>Album Title 8</p>
                         </div>
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 9">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 9">
+                            </a>
                             <p>Album Title 9</p>
                         </div>
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 10">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 10">
+                            </a>
                             <p>Album Title 10</p>
                         </div>
                     </div>
@@ -140,36 +192,46 @@
             </div>
             <a class="carousel-control-prev" href="#carrusel-albumes-1" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <span class="sr-only">Anterior</span>
             </a>
             <a class="carousel-control-next" href="#carrusel-albumes-1" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <span class="sr-only">Siguiente</span>
             </a>
         </div>
         <h2>Lo mejor del 2025</h2>
-        <div id="carrusel-albumes-2" class="carousel slide" data-ride="carousel">
+        <div id="carrusel-albumes-2" class="carousel slide" data-interval="false">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="d-flex overflow-hidden">
+                    <div class="d-flex">
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 1">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 11">
+                            </a>
                             <p>Album Title 1</p>
                         </div>
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 2">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 12">
+                            </a>
                             <p>Album Title 2</p>
                         </div>
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 3">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 13">
+                            </a>
                             <p>Album Title 3</p>
                         </div>
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 4">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 14">
+                            </a>
                             <p>Album Title 4</p>
                         </div>
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 5">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 15">
+                            </a>
                             <p>Album Title 5</p>
                         </div>
                     </div>
@@ -177,23 +239,33 @@
                 <div class="carousel-item">
                     <div class="d-flex overflow-hidden">
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 6">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 16">
+                            </a>
                             <p>Album Title 6</p>
                         </div>
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 7">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 17">
+                            </a>
                             <p>Album Title 7</p>
                         </div>
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 8">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 18">
+                            </a>
                             <p>Album Title 8</p>
                         </div>
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 9">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 19">
+                            </a>
                             <p>Album Title 9</p>
                         </div>
                         <div class="album">
-                            <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 10">
+                            <a href="producto.html">
+                                <img src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" class="d-block" alt="Album 20">
+                            </a>
                             <p>Album Title 10</p>
                         </div>
                     </div>
@@ -201,52 +273,52 @@
             </div>
             <a class="carousel-control-prev" href="#carrusel-albumes-2" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <span class="sr-only">Anterior</span>
             </a>
             <a class="carousel-control-next" href="#carrusel-albumes-2" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <span class="sr-only">Siguiente</span>
             </a>   
         </div>
     </main>
-</body>
-<footer class="footer-custom">
-    <div class="footer-izq">
-        <h3>Beat<span>Bazar</span></h3>
-        <p class="footer-links">
-            <a href="#">Inicio</a>
-            ·
-            <a href="#">Misión</a>
-            ·
-            <a href="#">Visión</a>
-            ·
-            <a href="#">Contacto</a>
-        </p>
-        <p class="footer-company-name">
-            Beat Bazar © 2025
-        </p>
-        <div class="footer-iconos">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                <img src="https://www.facebook.com/favicon.ico" alt="Facebook" width="24" height="24">
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                <img src="https://twitter.com/favicon.ico" alt="Twitter" width="24" height="24">
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                <img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn" width="24" height="24">
-            </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                <img src="https://github.com/favicon.ico" alt="GitHub" width="24" height="24">
-            </a>
+    <footer class="footer-custom">
+        <div class="footer-izq">
+            <h3>Beat<span>Bazar</span></h3>
+            <p class="footer-links">
+                <a href="index.html">Inicio</a>
+                ·
+                <a href="mision.html">Misión</a>
+                ·
+                <a href="vision.html">Visión</a>
+                ·
+                <a href="contacto.html">Contacto</a>
+            </p>
+            <p class="footer-company-name">
+                Beat Bazar © 2025
+            </p>
+            <div class="footer-iconos">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://www.facebook.com/favicon.ico" alt="Facebook" width="24" height="24">
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://twitter.com/favicon.ico" alt="Twitter" width="24" height="24">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn" width="24" height="24">
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://github.com/favicon.ico" alt="GitHub" width="24" height="24">
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="footer-right">
-        <p>Contacto</p>
-        <form action="#" method="post">
-            <input type="text" name="email" placeholder="Email">
-            <textarea name="message" placeholder="Mensaje"></textarea>
-            <button>Enviar</button>
-        </form>
-    </div>
-</footer>
+        <div class="footer-right">
+            <p>Contacto</p>
+            <form action="#" method="post">
+                <input type="text" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Mensaje"></textarea>
+                <button>Enviar</button>
+            </form>
+        </div>
+    </footer>
+</body>
 </html>

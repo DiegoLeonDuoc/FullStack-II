@@ -1,0 +1,32 @@
+.vision-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 24px;
+    background: linear-gradient(180deg, rgba(14,35,41,0.6), rgba(8,18,22,0.6));
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+.vision-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.vision-header h2 {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.vision-meta {
+    color: #bfc9cc;
+    font-size: 0.95rem;
+}
+
+.vision-body p {
+    line-height: 1.6;
+    color: #e6eef0;
+    margin-bottom: 1rem;
+}

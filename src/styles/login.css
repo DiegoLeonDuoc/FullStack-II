@@ -1,0 +1,29 @@
+body {
+    background: #000000fd;
+    color: #fff;
+}
+
+.site-header {
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.card {
+    background: rgba(255,255,255,0.03);
+}
+
+.form-control {
+    background: rgba(255,255,255,0.02);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.form-control::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+
+.btn-primary {
+    background: #094b57;
+    border: none;
+}
+
+a:hover { color: #ffffff; }

@@ -1,0 +1,59 @@
+.btn-primary {
+    background: #094b57;
+    border: none;
+}
+
+.cart-list .cart-item {
+    background: rgba(255,255,255,0.03);
+    border-radius: 6px;
+}
+
+.form-control {
+    background: rgba(255,255,255,0.02);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.form-control::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+
+.product-thumb {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.product-title {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.qty-input {
+    width: 80px;
+}
+
+.checkout-card {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.remove-item {
+    font-size: 1.1rem;
+}
+
+/* Responsive tweaks for small screens */
+@media (max-width: 800px) {
+    .product-thumb {
+        width: 64px;
+        height: 64px;
+    }
+
+    .qty-input {
+        width: 64px;
+    }
+
+    .checkout-card {
+        margin-top: 16px;
+    }
+}

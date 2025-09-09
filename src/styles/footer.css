@@ -1,21 +1,28 @@
 .footer-custom{
-	background: #111;
+	background: #050606;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
 	font: bold 16px sans-serif;
 	text-align: left;
 	padding: 50px 60px 40px;
-	overflow: hidden;
+	/* allow contents to wrap instead of being clipped */
+	overflow: visible;
+	/* make footer a flex row that wraps on small widths */
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	gap: 30px;
+	/* prevent footer from shrinking when using body as column flex */
+	flex-shrink: 0;
 }
-
-/* Footer left */
 
 .footer-custom .footer-izq{
-	float: left;
+	/* stop floating — use flex instead */
+	float: none;
+	flex: 1 1 320px;
+	min-width: 260px;
 }
-
-/* The company logo */
 
 .footer-custom h3{
 	color:  #ffffff;
@@ -26,8 +33,6 @@
 .footer-custom h3 span{
 	color:  #5383d3;
 }
-
-/* Footer links */
 
 .footer-custom .footer-links{
 	color:  #ffffff;
@@ -49,10 +54,12 @@
 	margin: 0;
 }
 
-/* Footer social icons */
-
 .footer-custom .footer-iconos{
 	margin-top: 40px;
+	/* keep icons row inside left column */
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
 }
 
 .footer-custom .footer-iconos a{
@@ -60,22 +67,21 @@
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #33383b;
+	background-color: transparent;
 	border-radius: 2px;
-
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
-
 	margin-right: 3px;
 	margin-bottom: 5px;
+	flex-shrink: 0;
 }
 
-/* Footer Right */
-
 .footer-custom .footer-right{
-	float: right;
+	flex: 0 0 0px;
+	min-width: 460px;
+	align-self: flex-end;
 }
 
 .footer-custom .footer-right p{
@@ -85,10 +91,9 @@
 	color: #ffffff;
 }
 
-/* The contact form */
-
 .footer-custom form{
-	display: inline-block;
+	/* switch to block so inputs take full available width of the column */
+	display: block;
 }
 
 .footer-custom form input,
@@ -96,17 +101,17 @@
 	display: block;
 	border-radius: 3px;
 	box-sizing: border-box;
-	background-color:  #1f2022;
+	background-color:  #1a1b1f;
 	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
 	border: none;
 	resize: none;
-
 	font: inherit;
 	font-size: 14px;
 	font-weight: normal;
 	color:  #d1d2d2;
-
-	width: 400px;
+	/* make inputs responsive inside the flex column */
+	width: 100%;
+	max-width: 400px;
 	padding: 18px;
 }
 
@@ -123,7 +128,6 @@
 	color:  #5c666b;
 }
 
-
 .footer-custom form input{
 	height: 55px;
 	margin-bottom: 15px;
@@ -136,16 +140,16 @@
 
 .footer-custom form button{
 	border-radius: 3px;
-	background-color:  #33383b;
+	background-color:  #1a1b1f;
 	color: #ffffff;
 	border: 0;
 	padding: 15px 50px;
 	font-weight: bold;
-	float: right;
+	/* keep button aligned to the right inside the form, but allow wrap on small screens */
+	display: inline-block;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
-
+/* responsive tweaks */
 @media (max-width: 1000px) {
 
 	.footer-custom {
@@ -158,7 +162,8 @@
 
 	.footer-custom form input,
 	.footer-custom form textarea{
-		width: 250px;
+		max-width: 250px;
+		width: 100%;
 	}
 
 	.footer-custom form button{
@@ -171,12 +176,14 @@
 
 	.footer-custom{
 		padding: 30px;
+		/* center stacked columns */
+		align-items: center;
 	}
 
 	.footer-custom .footer-izq,
 	.footer-custom .footer-right{
-		float: none;
-		max-width: 300px;
+		flex: 1 1 100%;
+		max-width: 600px;
 		margin: 0 auto;
 	}
 
@@ -186,13 +193,12 @@
 
 	.footer-custom form{
 		margin-top: 30px;
-	}
-
-	.footer-custom form{
 		display: block;
 	}
 
 	.footer-custom form button{
 		float: none;
+		display: block;
+		margin-left: auto;
 	}
 }

@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Definición de codificación de caracteres y visualización -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inclusión de librerías de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Inclusión de librerías de FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/producto.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <!-- Inclusión de jQuery y bootstrap js para control de carruseles-->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Beat Bazaar — Producto</title>
+</head>
+<body>
+    <header class="header-component" role="banner">
+        <div class="header-left">
+        <a href="index.html" class="logo"><img src="src/favicon.ico" alt="Beat Bazaar logo"></a>
+
+        <nav aria-label="Main navigation">
+            <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="mision.html">Misión</a></li>
+            <li><a href="vision.html">Visión</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        </div>
+
+        <div class="header-right">
+        <div class="search-bar" role="search">
+            <input type="text" placeholder="Buscar producto..." aria-label="Buscar producto">
+            <button type="button">Buscar</button>
+        </div>
+
+        <div class="cart" aria-hidden="false">
+            <a href="carrito.html"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+
+        <div class="user-account">
+            <a href="registro.html">Registrarse</a> / <a href="login.html">Iniciar sesión</a>
+        </div>
+        </div>
+    </header>
+    <main class="container product-page">
+        <div class="row">
+            <aside class="col-md-5 col-sm-12">
+                <div class="product-gallery card">
+                    <img id="main-image" src="https://lh3.googleusercontent.com/68eGl8DSkl7mleAJqQP6Ata_ZqQEB743Tq14cdu3KQQRSv54kOUFWivzsJ_oPFqrrdvnfihRVjXUEM4=w1440-h810-l90-rj" alt=Portada del álbum" class="img-fluid">
+                </div>
+            </aside>
+
+            <section class="col-md-7 col-sm-12">
+                <div class="product-info">
+                    <h2 class="product-title">Nombre del Álbum — Artista</h2>
+
+                    <div class="price-rating d-flex align-items-center mb-3">
+                        <div class="price mr-4">
+                            <span class="price-label">Precio:</span>
+                            <span class="price-value">$18.990</span>
+                        </div>
+
+                        <div class="rating d-flex align-items-center">
+                            <div class="stars mr-2">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-full"></i>
+                            </div>
+                            <div class="rating-count">4.5 (128 reseñas)</div>
+                        </div>
+                    </div>
+
+                    <p class="product-format"><strong>Formato:</strong> Vinilo 12" (180g) — Edición limitada</p>
+                    <p class="product-desc">Reedición remasterizada del álbum clásico, con funda gatefold y libreto de 12 páginas.</p>
+
+                    <div class="purchase-controls d-flex align-items-center mt-4">
+                        <label for="qty" class="mr-2">Cantidad</label>
+                        <input id="qty" type="number" min="1" value="1" class="form-control qty-input mr-3" style="width:90px;">
+                        <button class="btn btn-primary mr-2"><i class="fa fa-shopping-cart"></i> Agregar al carrito</button>
+                        <button class="btn btn-outline-light"><i class="fa fa-heart"></i> Favorito</button>
+                    </div>
+
+                    <hr>
+
+                    <div class="product-meta text-muted">
+                        <div><strong>Artista:</strong> Nombre del Artista</div>
+                        <div><strong>Lanzamiento:</strong> 1984</div>
+                        <div><strong>Etiqueta:</strong> Beat Bazaar Records</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <hr>
+
+        <section class="row reviews-section">
+            <div class="col-12">
+                <h3>Reseñas y comentarios</h3>
+
+                <div class="review card mb-2 p-3">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <strong>Juan P.</strong>
+                            <div class="small text-muted">5 de 5 — 2025-08-20</div>
+                        </div>
+                        <div class="stars text-warning">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mt-2">Excelente prensado, el sonido es claro y el groove se siente. Muy recomendado para coleccionistas.</p>
+                </div>
+
+                <div class="review card mb-2 p-3">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <strong>María L.</strong>
+                            <div class="small text-muted">4 de 5 — 2025-07-02</div>
+                        </div>
+                        <div class="stars text-warning">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+                        </div>
+                    </div>
+                    <p class="mt-2">Muy buena edición, el libreto es hermoso. Un par de leves clics en el surco B.</p>
+                </div>
+
+                <div class="review card mb-2 p-3">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <strong>Camilo R.</strong>
+                            <div class="small text-muted">3.5 de 5 — 2025-06-15</div>
+                        </div>
+                        <div class="stars text-warning">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i><i class="fa fa-star-o"></i>
+                        </div>
+                    </div>
+                    <p class="mt-2">Buen sonido, pero esperaba menos ruido de fondo en un prensado nuevo.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-custom">
+        <div class="footer-izq">
+            <h3>Beat<span>Bazar</span></h3>
+            <p class="footer-links">
+                <a href="index.html">Inicio</a>
+                ·
+                <a href="mision.html">Misión</a>
+                ·
+                <a href="vision.html">Visión</a>
+                ·
+                <a href="contacto.html">Contacto</a>
+            </p>
+            <p class="footer-company-name">
+                Beat Bazar © 2025
+            </p>
+            <div class="footer-iconos">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://www.facebook.com/favicon.ico" alt="Facebook" width="24" height="24">
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://twitter.com/favicon.ico" alt="Twitter" width="24" height="24">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn" width="24" height="24">
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://github.com/favicon.ico" alt="GitHub" width="24" height="24">
+                </a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>Contacto</p>
+            <form action="#" method="post">
+                <input type="text" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Mensaje"></textarea>
+                <button>Enviar</button>
+            </form>
+        </div>
+    </footer>
+
+    <script>
+        // Simple thumbnail click -> main image
+        document.querySelectorAll('.thumb').forEach(function(t){
+            t.addEventListener('click', function(){
+                document.getElementById('main-image').src = this.src;
+            });
+        });
+    </script>
+</body>
+</html>
