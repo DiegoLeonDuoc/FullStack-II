@@ -1,20 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Beat Bazaar — Misión</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <title>Nombre página</title>
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
 </head>
 <body>
-    <header>
-        <h1>El botón funciona</h1>
+    <header class="header-component" role="banner">
+        <div class="header-left">
+        <a href="index.html" class="logo"><img src="src/favicon.ico" alt="Beat Bazaar logo"></a>
+
+        <nav aria-label="Main navigation">
+            <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="mision.html">Misión</a></li>
+            <li><a href="vision.html">Visión</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        </div>
+
+        <div class="header-right">
+        <div class="search-bar" role="search">
+            <input type="text" placeholder="Buscar producto..." aria-label="Buscar producto">
+            <button type="button">Buscar</button>
+        </div>
+
+        <div class="cart" aria-hidden="false">
+            <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="user-account">
+            <a href="registro.html">Registrarse</a> / <a href="login.html">Iniciar sesión</a>
+        </div>
+        </div>
     </header>
     <main>
         <title>Prueba Boton</title>
     </main>
+    <footer class="footer-custom">
+        <div class="footer-izq">
+            <h3>Beat<span>Bazar</span></h3>
+            <p class="footer-links">
+                <a href="index.html">Inicio</a>
+                ·
+                <a href="mision.html">Misión</a>
+                ·
+                <a href="vision.html">Visión</a>
+                ·
+                <a href="contacto.html">Contacto</a>
+            </p>
+            <p class="footer-company-name">
+                Beat Bazar © 2025
+            </p>
+            <div class="footer-iconos">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://www.facebook.com/favicon.ico" alt="Facebook" width="24" height="24">
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://twitter.com/favicon.ico" alt="Twitter" width="24" height="24">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn" width="24" height="24">
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://github.com/favicon.ico" alt="GitHub" width="24" height="24">
+                </a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>Contacto</p>
+            <form action="#" method="post">
+                <input type="text" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Mensaje"></textarea>
+                <button>Enviar</button>
+            </form>
+        </div>
+    </footer>
 </body>
