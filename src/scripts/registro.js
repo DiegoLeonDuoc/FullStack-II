@@ -34,7 +34,9 @@
          * Se calcula el DV del RUT usando el algoritmo modulo 11 .
          * Input: parte numérica como string (por ejemplo "12345678").
          * Output: '0'-'9' o 'k' como el DV esperado.
-         */
+         * 12345678-5
+         * 
+         */ 
         function computeRutDV(numPart) {
             let sum = 0;
             let factor = 2;
